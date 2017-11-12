@@ -1,0 +1,11 @@
+<!doctype html>
+<title>Howdy!</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for("static", filename="style.css") }}">
+<h1>Welcome</h1>
+<h3>Request Type: {{ method }}</h3>
+
+{% if user %}
+    <h1>Howdy, {{ user }}</h1>
+{% elif not user %}
+    <h2>Welcome?! Whomst be ye'?s</h2>
+{% endif %}
