@@ -72,7 +72,6 @@ def greet(user=None):
 def user(name):
     return "Howdy, {}".format(name)
 
-
 # For int in URL var specify int data type
 @app.route("/post/<int:post_id>")
 def post(post_id):
